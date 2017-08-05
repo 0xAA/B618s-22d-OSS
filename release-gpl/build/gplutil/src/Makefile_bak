@@ -1,0 +1,22 @@
+################### program name 
+
+################### depend objects
+#OBJS = gplutil.o gplmsg.o loginctl.o bget.o gplshmem.o procutil.o
+OBJS = gplutil.o gplmsg.o bget.o gplshmem.o procutil.o loginctl.o proclockutil.o base64.o
+OBJS += atpmiclisten.o
+
+#ifneq ($(strip $(BUILD_IPV6)),)
+OBJS += ifaddrs.o
+#endif
+
+REAL_OBJS:=$(patsubst %,$(O)%,$(OBJS))
+REAL_LIBS = $(STAGING_DIR)/lib/libtraceapi_gpl.a
+
+SUB_LIBA=libtraceapi_gpl.a
+
+PROGRAM_NAME = gplutil
+######################### compile options
+CFLAGS = 
+CFLAGS += -fno-strict-aliasing -lsecurec
+LOCAL_NO_DMALLOC_SUPPORT:=y
+include rule.mak

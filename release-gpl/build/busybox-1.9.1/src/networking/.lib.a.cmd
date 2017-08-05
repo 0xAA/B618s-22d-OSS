@@ -1,0 +1,1 @@
+cmd_networking/lib.a := rm -f networking/lib.a; ar  rcs networking/lib.a networking/ifconfig.o networking/interface.o networking/netstat.o networking/route.o networking/smuxctl.o networking/traceroute.o networking/vconfig.o

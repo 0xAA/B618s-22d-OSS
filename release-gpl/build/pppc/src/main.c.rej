@@ -1,0 +1,62 @@
+--- main.c	2014-12-09 18:02:39.000000000 +0800
++++ main.c	2014-12-12 11:04:26.077237040 +0800
+@@ -1641,19 +1641,12 @@
+         memcpy(buf, pstTag->tag_data, length);
+         buf[length] = '\0';
+         printf("PPPC get ntp server %s.\r\n", buf);
+-        
++
++#ifdef SUPPORT_ATP_HYBRID_AUTH
+         pDiv = strtok(buf, ",");
+-        if (pDiv)
++        while (pDiv)
+         {
+-#ifdef SUPPORT_ATP_HYBRID_AUTH
+-            idx = parse_provcode(pDiv, acServer, sizeof(acServer));
+-            if (idx >= 0)
+-            {
+-                snprintf(acProvCode, sizeof(acProvCode), "%s", acServer);
+-                printf("Get link account : %s \n", acProvCode);
+-            }
+-            pDiv = strtok(NULL, ",");
+-            if (pDiv)
++            if (0 == strncasecmp(pDiv, "ntp", strlen("ntp"))) //ntp, ntp1, ntp2
+             {
+                 idx = parse_ntpsrv(pDiv, acServer, sizeof(acServer));
+                 if (idx >= 0)
+@@ -1661,13 +1654,26 @@
+                     snprintf(acNtpSrv[idx], sizeof(acNtpSrv[idx]), "%s", acServer);
+                 }
+             }
++            else if (0 == strncasecmp(pDiv, "provcode", strlen("provcode"))) //provcode
++            {
++                idx = parse_provcode(pDiv, acServer, sizeof(acServer));
++                if (idx >= 0)
++                {
++                    snprintf(acProvCode, sizeof(acProvCode), "%s", acServer);
++                    printf("Get link account : %s \n", acProvCode);
++                }
++            }
++            pDiv = strtok(NULL, ",");
++        }
+ #else
++        pDiv = strtok(buf, ",");
++        if (pDiv)
++        {
+             idx = parse_ntpsrv(pDiv, acServer, sizeof(acServer));
+             if (idx >= 0)
+             {
+                 snprintf(acNtpSrv[idx], sizeof(acNtpSrv[idx]), "%s", acServer);
+             }
+-#endif
+             pDiv = strtok(NULL, ",");
+             if (pDiv)
+             {
+@@ -1678,6 +1684,7 @@
+                 }
+             }
+         }
++#endif
+ 
+         buf[0] = '\0';
+         for (idx = 0;idx < 3;idx++)

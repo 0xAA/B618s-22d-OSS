@@ -1,0 +1,667 @@
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtbeginS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 gplutil.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 gplmsg.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 bget.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 gplshmem.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 procutil.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 loginctl.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 proclockutil.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 base64.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 atpmiclisten.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 listutil.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 strutil.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 traceapi.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ifaddrs.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtendS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crtn.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtbeginS.o
+LOAD gplutil.o
+LOAD gplmsg.o
+LOAD bget.o
+LOAD gplshmem.o
+LOAD procutil.o
+LOAD loginctl.o
+LOAD proclockutil.o
+LOAD base64.o
+LOAD atpmiclisten.o
+LOAD listutil.o
+LOAD strutil.o
+LOAD traceapi.o
+LOAD ifaddrs.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/4.4.7/libgcc.a
+LOAD /usr/lib/gcc/x86_64-linux-gnu/4.4.7/libgcc_s.so
+LOAD /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/libc.so
+START GROUP
+LOAD /lib/x86_64-linux-gnu/libc.so.6
+LOAD /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+LOAD /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+END GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/4.4.7/libgcc.a
+LOAD /usr/lib/gcc/x86_64-linux-gnu/4.4.7/libgcc_s.so
+LOAD /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtendS.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crtn.o
+                0x00000000000001c8                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+                0x00000000000001c8       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x00000000000001c8       0x24 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x00000000000001f0      0x400
+ *(.gnu.hash)
+ .gnu.hash      0x00000000000001f0      0x400 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+
+.dynsym         0x00000000000005f0     0x1350
+ *(.dynsym)
+ .dynsym        0x00000000000005f0     0x1350 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+
+.dynstr         0x0000000000001940      0xcb9
+ *(.dynstr)
+ .dynstr        0x0000000000001940      0xcb9 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+
+.gnu.version    0x00000000000025fa      0x19c
+ *(.gnu.version)
+ .gnu.version   0x00000000000025fa      0x19c /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+
+.gnu.version_d  0x0000000000002798        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+
+.gnu.version_r  0x0000000000002798       0x70
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000002798       0x70 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+
+.rela.dyn       0x0000000000002808      0x330
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text     0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel
+                0x0000000000002808       0x18 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ .rela.data.rel.ro.local
+                0x0000000000002820      0x1c8 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ .rela.data.rel.local
+                0x00000000000029e8       0x60 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000002a48       0xf0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+
+.rela.plt       0x0000000000002b38      0xc18
+ *(.rela.plt)
+ .rela.plt      0x0000000000002b38      0xc18 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ *(.rela.iplt)
+
+.init           0x0000000000003750       0x18
+ *(.init)
+ .init          0x0000000000003750        0x9 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+                0x0000000000003750                _init
+ .init          0x0000000000003759        0x5 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtbeginS.o
+ .init          0x000000000000375e        0x5 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtendS.o
+ .init          0x0000000000003763        0x5 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crtn.o
+
+.plt            0x0000000000003770      0x820
+ *(.plt)
+ .plt           0x0000000000003770      0x820 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ *(.iplt)
+
+.text           0x0000000000003f90     0x8248
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000003f90       0x17 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ *fill*         0x0000000000003fa7        0x9 90909090
+ .text          0x0000000000003fb0       0xaa /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtbeginS.o
+ *fill*         0x000000000000405a        0x6 90909090
+ .text          0x0000000000004060      0x6eb gplutil.o
+                0x0000000000004110                ATP_UTIL_GetSysTime
+                0x00000000000041a0                ATP_UTIL_VoiceHasUrgCall
+                0x0000000000004240                ATP_UTIL_VoiceGetVoipStatus
+                0x00000000000042e0                GPL_UTIL_GetPid
+ *fill*         0x000000000000474b        0x5 90909090
+ .text          0x0000000000004750     0x15f4 gplmsg.o
+                0x0000000000004750                ATP_MSG_GetMsgHead
+                0x0000000000004760                ATP_MSG_GetMsgByHead
+                0x0000000000004780                logLogTypeCheck
+                0x00000000000047c0                logLogLevelCheck
+                0x0000000000004800                ATP_MSG_MsgFilterProc
+                0x0000000000004820                ModularDebugPrintAvailableModules
+                0x0000000000004830                ATP_Debug_RegModCmds
+                0x0000000000004840                ATP_Debug_Print
+                0x00000000000048f0                ATP_MSG_QueueAppend
+                0x0000000000004960                ATP_MSG_GetMsgBlockEx
+                0x00000000000049b0                ATP_MSG_GetMsgBlock
+                0x0000000000004a00                ATP_MSG_SimpleBuilder
+                0x0000000000004a70                ATP_MSG_SetMsgProfile
+                0x0000000000004c00                ATP_MSG_Recv
+                0x0000000000004ec0                ATP_MSG_SendEx
+                0x0000000000005090                ATP_MSG_QueueClear
+                0x00000000000050e0                ATP_MSG_Send
+                0x0000000000005160                ATP_LOG_KLogPrintf
+                0x00000000000052c0                ATP_LOG_RecordItem
+                0x0000000000005470                ATP_MSG_SendSimpleMsg
+                0x00000000000054c0                ATP_MSG_SendMsgData
+                0x00000000000055f0                ATP_MSG_SendAndRecv
+                0x0000000000005710                ATP_MSG_TraceProc
+                0x00000000000057a0                ATP_LOG_Printf
+                0x00000000000059a0                ATP_MSG_GetNumOfProcesses
+                0x0000000000005a60                ATP_MSG_Destroy
+                0x0000000000005a90                ATP_MSG_Init
+                0x0000000000005d20                BSP_SYS_WakeupMonitorTask
+ *fill*         0x0000000000005d44        0xc 90909090
+ .text          0x0000000000005d50      0x7b9 bget.o
+                0x0000000000005d50                bstats
+                0x0000000000005df0                bpool
+                0x0000000000005ef0                brel
+                0x00000000000061b0                bget
+                0x00000000000063c0                bgetr
+                0x0000000000006490                bgetz
+ *fill*         0x0000000000006509        0x7 90909090
+ .text          0x0000000000006510      0x7a0 gplshmem.o
+                0x00000000000065d0                ATP_UTIL_GVarGetMemHandle
+                0x00000000000066e0                ATP_UTIL_GVarGetValueEx
+                0x00000000000067e0                ATP_UTIL_GVarGetValueWithCopy
+                0x0000000000006900                ATP_UTIL_GVarAttach
+                0x00000000000069e0                ATP_UTIL_BgetMalloc
+                0x0000000000006a00                ATP_UTIL_BgetStrdup
+                0x0000000000006a90                ATP_UTIL_BgetFree
+                0x0000000000006ab0                ATP_UTIL_GVarSetValue
+ .text          0x0000000000006cb0     0x17a0 procutil.o
+                0x0000000000006ce0                ATP_UTIL_FreeArgs
+                0x0000000000006d30                ATP_UTIL_GetExeFullPath
+                0x0000000000006e50                ATP_UTIL_WaitForPid
+                0x0000000000006f50                ATP_UTIL_SafeStrDup
+                0x0000000000006f70                ATP_UTIL_ParseArgs
+                0x0000000000007de0                ATP_UTIL_ForkProcessFull
+                0x0000000000008340                ATP_UTIL_ForkProcess
+                0x0000000000008400                ATP_UTIL_ForkProcessEx
+ .text          0x0000000000008450      0x18c loginctl.o
+                0x0000000000008450                ATP_UTIL_IsPathVfat
+ *fill*         0x00000000000085dc        0x4 90909090
+ .text          0x00000000000085e0      0x1c4 proclockutil.o
+                0x00000000000085e0                ATP_UTIL_RegUnLock
+                0x0000000000008650                ATP_UTIL_UnLockProc
+                0x00000000000086f0                ATP_UTIL_LockProc
+ *fill*         0x00000000000087a4        0xc 90909090
+ .text          0x00000000000087b0      0x3ff base64.o
+                0x0000000000008840                ATP_UTIL_Base64Decode
+                0x0000000000008a20                ATP_UTIL_Base64DecodeEx
+                0x0000000000008a40                ATP_UTIL_Base64Encode
+                0x0000000000008b90                ATP_UTIL_Base64EncodeEx
+ *fill*         0x0000000000008baf        0x1 90909090
+ .text          0x0000000000008bb0      0x1be atpmiclisten.o
+                0x0000000000008bb0                ATP_UTIL_MIC_ResetBackupAppFds
+                0x0000000000008be0                ATP_UTIL_MIC_AddBackupAppFds
+                0x0000000000008c40                ATP_UTIL_MIC_CloseBackupAppFdsReadableConnection
+ *fill*         0x0000000000008d6e        0x2 90909090
+ .text          0x0000000000008d70      0x22d listutil.o
+                0x0000000000008d70                ATP_UTIL_ListGetCount
+                0x0000000000008d90                ATP_UTIL_ListDeleteItemEx
+                0x0000000000008df0                ATP_UTIL_ListAppend
+                0x0000000000008e20                ATP_UTIL_ListFindItem
+                0x0000000000008e80                ATP_UTIL_ListIterateItem
+                0x0000000000008ed0                ATP_UTIL_ListDeleteAll
+                0x0000000000008f10                ATP_UTIL_ListDeleteItem
+ *fill*         0x0000000000008f9d        0x3 90909090
+ .text          0x0000000000008fa0      0xdbf strutil.o
+                0x0000000000008fa0                ATP_UTIL_RmDelimitor
+                0x0000000000008fe0                ATP_UTIL_StrIdxArrayGetStrByIdx
+                0x0000000000009030                ATP_UTIL_GetStrFromIdx
+                0x00000000000090a0                ATP_UTIL_StrRightChr
+                0x00000000000090d0                ATP_UTIL_StripSlashes
+                0x0000000000009110                ATP_UTIL_GetMatchType
+                0x00000000000091f0                ATP_UTIL_GetRidOfLastdot
+                0x0000000000009220                ATP_UTIL_CmpDnsDomain
+                0x0000000000009330                ATP_UTIL_GetRidOfNewlineSign
+                0x0000000000009390                ATP_UTIL_ConvertStrToShellStr
+                0x0000000000009460                ATP_UTIL_StrCat
+                0x00000000000094e0                ATP_UTIL_MSplitFree
+                0x0000000000009550                ATP_UTIL_StrTrim
+                0x0000000000009600                ATP_UTIL_MSplit
+                0x00000000000099b0                ATP_UTIL_Hex2Str
+                0x0000000000009b00                ATP_UTIL_GetIdxFromStrEx
+                0x0000000000009bf0                ATP_UTIL_GetIdxFromStr
+                0x0000000000009c00                ATP_UTIL_StrIdxArrayGetIdxByStr
+                0x0000000000009c80                ATP_UTIL_CstrMatch
+ *fill*         0x0000000000009d5f        0x1 90909090
+ .text          0x0000000000009d60      0xd15 traceapi.o
+                0x0000000000009d60                ATP_TRACE_SetFileMaxSize
+                0x0000000000009d80                ATP_TRACE_GetFileMaxSize
+                0x0000000000009d90                ATP_TRACE_GetOutput
+                0x0000000000009f40                TraceDebugCmdRegister
+                0x0000000000009f60                ATP_TRACE_GetOutputByString
+                0x0000000000009f80                ATP_TRACE_RegModule
+                0x000000000000a070                ATP_TRACE_SetOutput
+                0x000000000000a1c0                ATP_UTIL_GetCurTimeStamp
+                0x000000000000a250                ATP_UTIL_GetCurPid
+                0x000000000000a270                ATP_TRACE_IsModuleEnabled
+                0x000000000000a320                ATP_TRACE_PrintInfoEx
+                0x000000000000a410                TraceCtxSetPackageLevel
+                0x000000000000a550                ATP_TRACE_SetPackageLevel
+                0x000000000000a570                TraceMsgInitRespProc
+                0x000000000000a690                ATP_TRACE_GetLevelStr
+                0x000000000000a6c0                TraceDisplayOneItem
+                0x000000000000a790                ATP_TRACE_Display
+                0x000000000000a7b0                ATP_TRACE_PrintInfo
+                0x000000000000a9c0                ATP_TRACE_GetLevelByString
+ *fill*         0x000000000000aa75        0xb 90909090
+ .text          0x000000000000aa80     0x1712 ifaddrs.o
+                0x000000000000aa80                freeifaddrs
+                0x000000000000b070                getifaddrs
+ *fill*         0x000000000000c192        0xe 90909090
+ .text          0x000000000000c1a0       0x36 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtendS.o
+ *fill*         0x000000000000c1d6        0x2 90909090
+ .text          0x000000000000c1d8        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crtn.o
+ *(.gnu.warning)
+
+.fini           0x000000000000c1d8        0xe
+ *(.fini)
+ .fini          0x000000000000c1d8        0x4 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+                0x000000000000c1d8                _fini
+ .fini          0x000000000000c1dc        0x5 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtbeginS.o
+ .fini          0x000000000000c1e1        0x5 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crtn.o
+                0x000000000000c1e6                PROVIDE (__etext, .)
+                0x000000000000c1e6                PROVIDE (_etext, .)
+                0x000000000000c1e6                PROVIDE (etext, .)
+
+.rodata         0x000000000000c200      0x728
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.1
+                0x000000000000c200       0x92 gplutil.o
+                                         0x9a (size before relaxing)
+ .rodata.str1.1
+                0x000000000000c292       0x2d gplmsg.o
+                                         0x30 (size before relaxing)
+ .rodata.str1.1
+                0x000000000000c2bf      0x126 bget.o
+                                        0x12f (size before relaxing)
+ *fill*         0x000000000000c3e5        0x3 00
+ .rodata.str1.8
+                0x000000000000c3e8      0x175 bget.o
+ .rodata        0x000000000000c55d       0x23 bget.o
+ .rodata.str1.1
+                0x000000000000c580        0x6 gplshmem.o
+                                          0x9 (size before relaxing)
+ .rodata.str1.1
+                0x000000000000c586       0x78 procutil.o
+                                         0x85 (size before relaxing)
+ .rodata.str1.1
+                0x000000000000c5fe       0x12 loginctl.o
+                                         0x14 (size before relaxing)
+ .rodata.str1.1
+                0x000000000000c610       0x12 proclockutil.o
+                                         0x24 (size before relaxing)
+ *fill*         0x000000000000c622       0x1e 00
+ .rodata        0x000000000000c640       0xa1 base64.o
+ .rodata.str1.1
+                0x000000000000c6e1       0x22 strutil.o
+                                         0x29 (size before relaxing)
+ *fill*         0x000000000000c703        0x5 00
+ .rodata.str1.8
+                0x000000000000c708       0x21 strutil.o
+ *fill*         0x000000000000c729        0x3 00
+ .rodata        0x000000000000c72c       0x18 strutil.o
+ .rodata.str1.1
+                0x000000000000c744      0x14c traceapi.o
+                                        0x157 (size before relaxing)
+ .rodata.str1.8
+                0x000000000000c890       0x98 traceapi.o
+                                         0x93 (size before relaxing)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x000000000000c928      0x434
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x000000000000c928      0x434 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+
+.eh_frame       0x000000000000cd60     0x1104
+ *(.eh_frame)
+ .eh_frame      0x000000000000cd60       0x40 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ .eh_frame      0x000000000000cda0       0xb8 gplutil.o
+                                         0xc8 (size before relaxing)
+ .eh_frame      0x000000000000ce58      0x398 gplmsg.o
+                                        0x350 (size before relaxing)
+ .eh_frame      0x000000000000d1f0       0xb0 bget.o
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x000000000000d2a0      0x180 gplshmem.o
+                                        0x178 (size before relaxing)
+ .eh_frame      0x000000000000d420      0x158 procutil.o
+                                        0x168 (size before relaxing)
+ .eh_frame      0x000000000000d578       0x38 loginctl.o
+                                         0x50 (size before relaxing)
+ .eh_frame      0x000000000000d5b0       0x78 proclockutil.o
+                                         0x88 (size before relaxing)
+ .eh_frame      0x000000000000d628       0x90 base64.o
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x000000000000d6b8       0x68 atpmiclisten.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x000000000000d720       0xe0 listutil.o
+ .eh_frame      0x000000000000d800      0x258 strutil.o
+                                        0x248 (size before relaxing)
+ .eh_frame      0x000000000000da58      0x2f0 traceapi.o
+                                        0x2b8 (size before relaxing)
+ .eh_frame      0x000000000000dd48      0x118 ifaddrs.o
+                                        0x120 (size before relaxing)
+ .eh_frame      0x000000000000de60        0x4 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtendS.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x000000000000de64                . = (ALIGN (0x200000) - ((0x200000 - .) & 0x1fffff))
+                0x000000000020e894                . = DATA_SEGMENT_ALIGN (0x200000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+
+.fini_array
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+
+.ctors          0x000000000020e898       0x10
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ .ctors         0x000000000020e898        0x8 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x000000000020e8a0        0x8 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtendS.o
+
+.dtors          0x000000000020e8a8       0x10
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ .dtors         0x000000000020e8a8        0x8 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x000000000020e8b0        0x8 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtendS.o
+                0x000000000020e8b0                __DTOR_END__
+
+.jcr            0x000000000020e8b8        0x8
+ *(.jcr)
+ .jcr           0x000000000020e8b8        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtbeginS.o
+ .jcr           0x000000000020e8b8        0x8 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtendS.o
+
+.data.rel.ro    0x000000000020e8c0      0x100
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ .data.rel.ro.local
+                0x000000000020e8c0       0x28 procutil.o
+ *fill*         0x000000000020e8e8       0x18 00
+ .data.rel.ro.local
+                0x000000000020e900       0xc0 traceapi.o
+                0x000000000020e900                m_astTraceDebugCmds
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x000000000020e9c0      0x1c0
+ *(.dynamic)
+ .dynamic       0x000000000020e9c0      0x1c0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+                0x000000000020e9c0                _DYNAMIC
+
+.got            0x000000000020eb80      0x470
+ *(.got.plt)
+ .got.plt       0x000000000020eb80      0x420 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+                0x000000000020eb80                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ *(.got)
+ .got           0x000000000020efa0       0x50 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ *(.igot)
+                0x000000000020f000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.data           0x000000000020f000       0xc0
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000000000020f000        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ .data          0x000000000020f000        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtbeginS.o
+ .data.rel      0x000000000020f000        0x8 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtbeginS.o
+                0x000000000020f000                __dso_handle
+ .data          0x000000000020f008        0x0 gplutil.o
+ *fill*         0x000000000020f008       0x18 00
+ .data          0x000000000020f020       0x64 gplmsg.o
+                0x000000000020f020                g_stMsgCtx
+                0x000000000020f080                g_bLogEnable
+ .data          0x000000000020f084        0x0 bget.o
+ .data          0x000000000020f084        0x0 gplshmem.o
+ .data          0x000000000020f084        0x0 procutil.o
+ .data          0x000000000020f084        0x0 loginctl.o
+ .data          0x000000000020f084        0x0 proclockutil.o
+ .data          0x000000000020f084        0x0 base64.o
+ .data          0x000000000020f084        0x0 atpmiclisten.o
+ .data          0x000000000020f084        0x0 listutil.o
+ .data          0x000000000020f084        0x0 strutil.o
+ *fill*         0x000000000020f084        0x4 00
+ .data          0x000000000020f088       0x10 traceapi.o
+                0x000000000020f088                m_lCurPid
+ *fill*         0x000000000020f098        0x8 00
+ .data.rel.local
+                0x000000000020f0a0       0x20 traceapi.o
+                0x000000000020f0a0                g_pcEmptyStr
+                0x000000000020f0a8                m_aucAppName
+ .data          0x000000000020f0c0        0x0 ifaddrs.o
+ .data          0x000000000020f0c0        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtendS.o
+ .data          0x000000000020f0c0        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crtn.o
+
+.data1
+ *(.data1)
+                0x000000000020f0c0                _edata = .
+                0x000000000020f0c0                PROVIDE (edata, .)
+                0x000000000020f0c0                __bss_start = .
+
+.bss            0x000000000020f0c0       0x60
+ *(.dynbss)
+ .dynbss        0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000000000020f0c0        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crti.o
+ .bss           0x000000000020f0c0       0x10 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtbeginS.o
+ .bss           0x000000000020f0d0        0x0 gplutil.o
+ .bss           0x000000000020f0d0        0x0 gplmsg.o
+ .bss           0x000000000020f0d0        0x0 bget.o
+ .bss           0x000000000020f0d0        0x0 gplshmem.o
+ .bss           0x000000000020f0d0        0x0 procutil.o
+ .bss           0x000000000020f0d0        0x0 loginctl.o
+ .bss           0x000000000020f0d0        0x0 proclockutil.o
+ .bss           0x000000000020f0d0        0x0 base64.o
+ .bss           0x000000000020f0d0        0x0 atpmiclisten.o
+ .bss           0x000000000020f0d0        0x0 listutil.o
+ .bss           0x000000000020f0d0        0x0 strutil.o
+ *fill*         0x000000000020f0d0       0x10 00
+ .bss           0x000000000020f0e0       0x40 traceapi.o
+ .bss           0x000000000020f120        0x0 ifaddrs.o
+ .bss           0x000000000020f120        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtendS.o
+ .bss           0x000000000020f120        0x0 /usr/lib/gcc/x86_64-linux-gnu/4.4.7/../../../x86_64-linux-gnu/crtn.o
+ *(COMMON)
+                0x000000000020f120                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x000000000020f120                . = ALIGN (0x8)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x000000000060f120        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x000000000060f120                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x000000000060f120                . = ALIGN (0x8)
+                0x000000000060f120                _end = .
+                0x000000000060f120                PROVIDE (end, .)
+                0x000000000060f120                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2a
+ *(.comment)
+ .comment       0x0000000000000000       0x2a /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtbeginS.o
+                                         0x2b (size before relaxing)
+ .comment       0x0000000000000000       0x2b gplutil.o
+ .comment       0x0000000000000000       0x2b gplmsg.o
+ .comment       0x0000000000000000       0x2b bget.o
+ .comment       0x0000000000000000       0x2b gplshmem.o
+ .comment       0x0000000000000000       0x2b procutil.o
+ .comment       0x0000000000000000       0x2b loginctl.o
+ .comment       0x0000000000000000       0x2b proclockutil.o
+ .comment       0x0000000000000000       0x2b base64.o
+ .comment       0x0000000000000000       0x2b atpmiclisten.o
+ .comment       0x0000000000000000       0x2b listutil.o
+ .comment       0x0000000000000000       0x2b strutil.o
+ .comment       0x0000000000000000       0x2b traceapi.o
+ .comment       0x0000000000000000       0x2b ifaddrs.o
+ .comment       0x0000000000000000       0x2b /usr/lib/gcc/x86_64-linux-gnu/4.4.7/crtendS.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(libgplutil.so elf64-x86-64)

@@ -1,0 +1,20 @@
+--- lib/system.c	2015-07-30 09:36:09.000000000 +0800
++++ lib/system.c	2015-07-30 09:36:09.000000000 +0800
+@@ -1156,7 +1156,7 @@
+ struct group *sys_getgrnam(const char *name)
+ {
+ #ifdef SUPPORT_ATP_SAMBA_USER_SMBUSERS  
+-    DEBUG(0,("~~~~~~~~~~~~~sys_getgrnam~~~~~~~~~~~~~~\n"));
++    DEBUG(5,("~~~~~~~~~~~~~sys_getgrnam~~~~~~~~~~~~~~\n"));
+     return &rootgr;
+ #else
+ 	return getgrnam(name);
+@@ -1166,7 +1166,7 @@
+ struct group *sys_getgrgid(gid_t gid)
+ {
+ #ifdef SUPPORT_ATP_SAMBA_USER_SMBUSERS  
+-    DEBUG(0,("~~~~~~~~~~~~~sys_getgrgid~~~~~~~~~~~~~~\n"));
++    DEBUG(5,("~~~~~~~~~~~~~sys_getgrgid~~~~~~~~~~~~~~\n"));
+     return &rootgr;
+ #else
+ 	return getgrgid(gid);

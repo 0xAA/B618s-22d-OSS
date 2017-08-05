@@ -1,0 +1,1 @@
+cmd_atpconfig/lib.a := rm -f atpconfig/lib.a; ar  rcs atpconfig/lib.a atpconfig/arp.o atpconfig/atpcommon.o atpconfig/checkdebug.o atpconfig/ftpgetput.o atpconfig/gplgethostbyname.o atpconfig/interface.o atpconfig/ping.o atpconfig/tftp.o atpconfig/traceroute6.o atpconfig/wget.o

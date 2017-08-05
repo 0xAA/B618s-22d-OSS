@@ -1,0 +1,1 @@
+#define CONFIG_ATP_CHECKDEBUG 1
